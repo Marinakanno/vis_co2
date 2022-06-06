@@ -39,24 +39,24 @@ for i in range(no):
  else: 
   print('correct the name of ',sys.argv[i+1])
 cntry=[]
-#print(len(cnt))
+print(len(cnt))
 for j in range(len(cnt)):
- for i in range(1990,2021):
+ for i in range(1990,2018):
   cntry.append(int(cnt[j][i]))
 if len(cnt)==1:
  plt.plot(x,cntry,'k-',label=sys.argv[1])
 if len(cnt)==2:
- plt.plot(x,cntry[0:3000],'k-',label=sys.argv[1])
- plt.plot(x,cntry[3001:5000],'k--',label=sys.argv[2])
+ plt.plot(x,cntry[0:28],'k-',label=sys.argv[1])
+ plt.plot(x,cntry[28:56],'k--',label=sys.argv[2])
 if len(cnt)==3:
- plt.plot(x,cntry[0:3000],'k-',label=sys.argv[1])
- plt.plot(x,cntry[3001:5000],'k--',label=sys.argv[2])
- plt.plot(x,cntry[5001:7000],'k:',label=sys.argv[3])
+ plt.plot(x,cntry[0:21],'k-',label=sys.argv[1])
+ plt.plot(x,cntry[28:56],'k--',label=sys.argv[2])
+ plt.plot(x,cntry[56:84],'k:',label=sys.argv[3])
 if len(cnt)==4:
- plt.plot(x,cntry[0:3000],'k-',label=sys.argv[1])
- plt.plot(x,cntry[3001:5000],'k--',label=sys.argv[2])
- plt.plot(x,cntry[5001:7000],'k:',label=sys.argv[3])
- plt.plot(x,cntry[7001:9000],'k-.',label=sys.argv[4])
+ plt.plot(x,cntry[0:21],'k-',label=sys.argv[1])
+ plt.plot(x,cntry[28:56],'k--',label=sys.argv[2])
+ plt.plot(x,cntry[56:84],'k:',label=sys.argv[3])
+ plt.plot(x,cntry[85:112],'k-.',label=sys.argv[4])
 def main():
  plt.legend()
  plt.savefig('result.png')

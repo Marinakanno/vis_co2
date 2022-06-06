@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="VISCO2", # 設定する名前
-    version="0.0.1", # バージョン設定
+    version="0.0.5", # バージョン設定
     author="marina kanno", # 名前
     author_email="marinasvtmax@gmail.com", # メアド変更
     description='Visualization of co2 emissions from 1990 to 2018 for each country', # 説明文書書き換え
